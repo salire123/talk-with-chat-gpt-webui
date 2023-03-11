@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+</head>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+
+
+<body>
+<div id='bodybox'>
+    <div id='chatboarder'>
+
+        <!-- this is the chat log -->
+        <div id="chatlog">
+        </div>
+
+        <!-- this is the chat box your type in -->
+        <input type="text" name="chat" id="chatbox" placeholder= "Hi there! Type here to talk to me.">
+        <button type="button" id="chatbutton">Send</button>
+    </div>
+</div>
+
+<script>
+    var socket = io.connect('http://127.0.0.1:5000');
+    socket.on('connect', function() {
+        socket.emit("User connected!");
+
+        socket.on('message', function(msg) {
+            //only clear the Chatbot is typing... message
+            $('.bot-message').last().remove();
+            $('#chatlog').append('<p class="bot-message">' + msg + '</p>'); // append the bot's message
+        });
+     
+        $('#chatbox').on('keydown', function(event) { // when the user presses a key
+            if (event.which === 13) { // if the user presses enter
+                var message = 'user: ' + $('#chatbox').val(); // get the user's message
+                socket.emit('message', message); // pass the user's message to the server
+                $('#chatbox').val('');   // clear the chatbox
+                $('#chatlog').append('<p class="user-message">' + message + '</p>'); // append the user's message
+
+                //chatbot loading the response
+                $('#chatlog').append('<p class="bot-message">Chatbot is typing...</p>'); // append the bot's message
+
+            }
+        });
+        
+        $('#chatbutton').on('click', function() { // when the user presses a key
+            var message = $('#chatbox').val();// get the user's message
+            $('#chatlog').append('<p class="user-message">' + message + '</p>'); // append the user's message
+            socket.emit('message', message); // pass the user's message to the server
+            $('#chatbox').val(''); // clear the chatbox
+
+            //chatbot loading the response
+            $('#chatlog').append('<p class="bot-message">Chatbot is typing...</p>'); // append the bot's message
+
+        });
+    });
+</script>
+
+
+</body>
+</html>

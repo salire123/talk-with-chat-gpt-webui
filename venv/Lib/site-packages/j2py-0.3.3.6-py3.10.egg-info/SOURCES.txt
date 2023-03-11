@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/J2Py.egg-info/PKG-INFO
+src/J2Py.egg-info/SOURCES.txt
+src/J2Py.egg-info/dependency_links.txt
+src/J2Py.egg-info/top_level.txt
+src/j2py/__init__.py
+src/j2py/__main__.py
+src/j2py/j2py.py
+src/j2py.egg-info/PKG-INFO
+src/j2py.egg-info/SOURCES.txt
+src/j2py.egg-info/dependency_links.txt
+src/j2py.egg-info/top_level.txt

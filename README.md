@@ -4,22 +4,38 @@ TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to 
 
 ##  To-do List
 
--[x] Use ChatGPT API in this web application 
+- [👌] Use ChatGPT API in this web application 
 
-        --[idk i work or not now(testing)] let chat bot remember the chat
+    - [ ] let chat bot remember the chat 🤷‍♀️(idk i work or not now(testing))
 
--[x] Create a website to host the chatbot 
+- [👌] Create a website to host the chatbot 
 
-        --[x] let user set the chat log font size
+    - [👌] let user set the chat log font size
 
-        --[ ] show all previous chat 
+    - [ ] show all previous chat 
 
--[trying] Implement sound for the chatbot using Tortoise TTS 
+- [ ] Implement sound for the chatbot using Tortoise TTS 🤔(trying)
 
--[ ] Use D-ID API video and display it on the web(it need to buy the api)
+- [ ] Use D-ID API video and display it on the web 😒(it need to buy to use api💸💸💸, 😢have any like that and free?)
+
 
 ## Usage
 To use TalkWithChatGPTWebUI,
+
+0. make a .env file like this:
+        
+        OPENAI_API_KEY = you openai key 
+        MESSAGE_LOG_PATH = message_log\testing_message_log.txt
+    here you can find you key:
+
+        https://platform.openai.com/account/api-keys
+
+    the MESSAGE_LOG_PATH is the txt file and should look like this :
+
+        system|You are a helpful assistant.
+        user|Who won the world series in 2020?
+        assistant|The Los Angeles Dodgers won the World Series in 2020.
+        user|Where was it played?
 
 1. Download or clone this project to your local machine.
 2. Install the required packages from requirements.txt.

@@ -4,13 +4,13 @@ TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to 
 
 ##  To-do List
 
-- [👌] Use ChatGPT API in this web application 
+- [x] Use ChatGPT API in this web application 
 
     - [ ] let chat bot remember the chat 🤷‍♀️(idk i work or not now(testing))
 
-- [👌] Create a website to host the chatbot 
+- [x] Create a website to host the chatbot 
 
-    - [👌] let user set the chat log font size
+    - [x] let user set the chat log font size
 
     - [ ] show all previous chat 
 

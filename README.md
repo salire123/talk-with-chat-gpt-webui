@@ -1,6 +1,6 @@
 # write by ChatGPT and Bing ai
-# TalkWithChatGPTWebUI
-TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
+# talk-with-chat-gpt-webui
+talk-with-chat-gpt-webui is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
 
 ##  To-do List
 
@@ -20,7 +20,7 @@ TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to 
 
 
 ## Usage
-To use TalkWithChatGPTWebUI,
+To use talk-with-chat-gpt-webui,
 
 0. make a .env file like this:
         

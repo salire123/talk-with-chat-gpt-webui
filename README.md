@@ -1,14 +1,15 @@
 # TalkWithChatGPTWebUI
 # write by chatgpt
-write by chatgpt
+
 # TalkWithChatGPTWebUI
 TalkWithChatGPTWebUI is a web application that utilizes OpenAI's GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation, providing an engaging and interactive experience.
 
 # To-do List
- Use ChatGPT API in this web application
- Create a website to host the chatbot
- Implement sound for the chatbot using Tortoise TTS
- Use D-ID API video and display it on the web
+ [x]Use ChatGPT API in this web application
+ [x]Create a website to host the chatbot
+ [trying]Implement sound for the chatbot using Tortoise TTS
+ []Use D-ID API video and display it on the web
+ 
 # Usage
 To use the TalkWithChatGPTWebUI, simply navigate to the website and start typing messages to the chatbot. The chatbot will respond to your messages using natural language processing, allowing for a smooth and seamless conversation.
 

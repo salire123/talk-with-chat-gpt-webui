@@ -2,17 +2,23 @@
 # TalkWithChatGPTWebUI
 TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
 
-# To-do List
+##  To-do List
 
 -[x] Use ChatGPT API in this web application 
 
+        --[idk i work or not now(testing)] let chat bot remember the chat
+
 -[x] Create a website to host the chatbot 
+
+        --[x] let user set the chat log font size
+
+        --[ ] show all previous chat 
 
 -[trying] Implement sound for the chatbot using Tortoise TTS 
 
--[ ] Use D-ID API video and display it on the web
+-[ ] Use D-ID API video and display it on the web(it need to buy the api)
 
-# Usage
+## Usage
 To use TalkWithChatGPTWebUI,
 
 1. Download or clone this project to your local machine.
@@ -21,7 +27,7 @@ To use TalkWithChatGPTWebUI,
 4. Open http://localhost:5000/ in your browser to enter the web interface.
 5. Start chatting with ChatGPT models.
 
-# Dependencies
+##  Dependencies
 TalkWithChatGPTWebUI relies on the following dependencies:
 
 ChatGPT API: A Python wrapper for OpenAI’s GPT model that allows easy integration with web applications.
@@ -29,6 +35,7 @@ Tortoise TTS: A text-to-speech library that converts text into natural sounding 
 D-ID API: A face anonymization service that generates realistic videos of faces without revealing their identity.
 
 # ---------------------------------------------------------
+# 做完先寫中文
 # TalkWithChatGPTWebUI
 
 TalkWithChatGPTWebUI是一個使用Python和Flask開發的網頁介面，讓使用者可以與ChatGPT模型進行對話。

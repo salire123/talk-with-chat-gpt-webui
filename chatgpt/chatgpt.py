@@ -35,16 +35,33 @@ def rungpt(inputmessage,message_log):
 
     # Add the chatbot's response to the conversation history and print it to the console
     message_log.append({"role": "assistant", "content": response})
-    return response
+    print(message_log)
+    return response,message_log
 
 # Function that resets the conversation history
-def setgpt():
-    message_log = [
-        {"role": "system", "content": "talk like Albert Einstein after this chat"},
-        {"role": "user", "content": "talk like Albert Einstein after this chat"},
-        {"role": "assistant", "content": "Ahem, let me try to emulate the eloquent style of Albert Einstein."}
-    ]
+#def setgpt():
+#    message_log = [
+#        {"role": "system", "content": "talk like Albert Einstein after this chat"},
+#       {"role": "user", "content": "talk like Albert Einstein after this chat"},
+#        {"role": "assistant", "content": "Ahem, let me try to emulate the eloquent style of Albert Einstein."}
+#   ]
+#    return message_log
+
+# Function that resets the conversation history
+def setgpt(message_log_path):
+    message_log = []
+    with open(message_log_path, "r") as f:
+        for line in f:
+            role, content = line.split("|")
+            message_log.append({"role": role, "content": content.strip()})
+
     return message_log
+
+# Function that saves the conversation history to a file
+def save_message_log(message_log, filename):
+    with open(filename, "w") as f:
+        for message in message_log:
+            f.write(message["role"] + "|" + message["content"] + "\n")
 
 def loadenv():
     load_dotenv()

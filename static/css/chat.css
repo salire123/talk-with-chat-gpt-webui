@@ -35,7 +35,7 @@ body {
 }
 
 #chatlog {
-  font-size: 80px;
+  font-size: 40px;
   height: 70vh; /* set the maximum height to 70% of the viewport height */
   overflow-y: auto; /* enable scrolling */
   color: #ddd; /* set the text color to light gray */
@@ -77,3 +77,6 @@ pre {
 .user-message {
   text-align: right;
 }
+
+
+

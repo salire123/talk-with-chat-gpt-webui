@@ -1,4 +1,4 @@
-# write by ChatGPT
+# write by ChatGPT and Bing ai
 # TalkWithChatGPTWebUI
 TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
 
@@ -15,7 +15,11 @@ TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to 
 # Usage
 To use TalkWithChatGPTWebUI,
 
-not ye
+1. Download or clone this project to your local machine.
+2. Install the required packages from requirements.txt.
+3. Run app.py file.
+4. Open http://localhost:5000/ in your browser to enter the web interface.
+5. Start chatting with ChatGPT models.
 
 # Dependencies
 TalkWithChatGPTWebUI relies on the following dependencies:

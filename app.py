@@ -7,20 +7,6 @@ app = Flask(__name__)
 app.config['SECRET'] = 'secret!123'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-@socketio.on('message')
-def handle_message(message):
-    print('received message: ' + message)
-    if message != 'User connected!':
-        send_message_to_chatbot(message)
-
-from datetime import datetime
-from flask import Flask, render_template, request, redirect
-from flask_socketio import SocketIO, send, emit
-from chatgpt.chatgptmain import usegpt
-
-app = Flask(__name__)
-app.config['SECRET'] = 'secret!123'
-socketio = SocketIO(app, cors_allowed_origins="*")
 
 @socketio.on('message')
 def handle_message(message):
@@ -57,9 +43,6 @@ def get_chatbot_response(message):
 
     return chatbot_response
 
-@app.route('/')
-def index():
-    return render_template('chat.html')
 
 if __name__ == '__main__':
      socketio.run(app, debug=True)

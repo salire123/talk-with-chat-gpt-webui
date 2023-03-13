@@ -4,7 +4,7 @@ Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model
 
 ##  To-do List
 
-![plan](Screenshot 2023-03-13 125928.png)
+![plan](plan.png)
 
 - [x] Use ChatGPT API in this web application 
 
@@ -29,7 +29,8 @@ To use Talk-With-Chat-GPT-WebUI,
         git clone https://github.com/salire123/talk-with-chat-gpt-webui.git
 
 1. make a .env file like this:
-    OPENAI_API_KEY = you openai key 
+
+        OPENAI_API_KEY = you openai key 
 
         MESSAGE_LOG_PATH = message_log\testing_message_log.txt
 

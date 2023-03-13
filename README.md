@@ -51,7 +51,7 @@ Tortoise TTS: A text-to-speech library that converts text into natural sounding 
 D-ID API: A face anonymization service that generates realistic videos of faces without revealing their identity.
 
 # ---------------------------------------------------------
-# 做完先寫中文
+# 做完才寫中文
 # Talk-With-Chat-GPT-WebUI
 
 Talk-With-Chat-GPT-WebUI是一個使用Python和Flask開發的網頁介面，讓使用者可以與ChatGPT模型進行對話。

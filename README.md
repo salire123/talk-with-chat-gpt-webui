@@ -18,40 +18,41 @@ Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model
 
 - [ ] Implement sound for the chatbot using Tortoise TTS 🤔(trying)
 
+    -[ ] make the custom voice🤔
+
 - [ ] Use D-ID API video and display it on the web 😒(it need to buy to use api💸💸💸, 😢have any like that and free?)
 
 
 ## Usage
 To use Talk-With-Chat-GPT-WebUI,
 
-0. Download or clone this project to your local machine.
+1. Download or clone the project to your local machine by running the following command in a terminal:
 
         git clone https://github.com/salire123/talk-with-chat-gpt-webui.git
 
-1. make a .env file like this:
+2. Create a .env file with the following configuration:
 
-        OPENAI_API_KEY = you openai key 
+        OPENAI_API_KEY=<your OpenAI API key>
+        MESSAGE_LOG_PATH=message_log/testing_message_log.txt
 
-        MESSAGE_LOG_PATH = message_log\testing_message_log.txt
+    Replace <your OpenAI API key> with your actual OpenAI API key, which you can find on the OpenAI platform website under "API Keys".
 
-    here you can find you key:
+    The MESSAGE_LOG_PATH variable specifies the file path and name for the message log file. The example specifies a file named testing_message_log.txt located in a directory named message_log.
 
-        https://platform.openai.com/account/api-keys
+3. Install the required packages from requirements.txt by running the following command in a terminal:
 
-    the MESSAGE_LOG_PATH is the txt file and should look like this :
-
-        system|You are a helpful assistant.
-        user|Who won the world series in 2020?
-        assistant|The Los Angeles Dodgers won the World Series in 2020.
-        user|Where was it played?
-
-2. Install the required packages from requirements.txt.
 
         pip install -r requirements.txt
 
-3. Run app.py file.
-4. Open http://localhost:5000/ in your browser to enter the web interface.
-5. Start chatting with ChatGPT models.
+4. Run the app.py file by running the following command in a terminal:
+
+        python app.py
+
+5. Open http://localhost:5000/ in your browser to enter the web interface.
+
+6. Start chatting with the ChatGPT model.👍
+
+By following these steps, you should be able to run the "talk-with-chat-gpt-webui" project and chat with the ChatGPT model through a web interface. The conversation will be logged in the message log file specified in the .env file.
 
 ##  Dependencies
 Talk-With-Chat-GPT-WebUI relies on the following dependencies:

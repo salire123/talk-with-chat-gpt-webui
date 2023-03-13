@@ -4,7 +4,7 @@ Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model
 
 ##  To-do List
 
-! [plan](Screenshot 2023-03-13 125928.png)
+![plan](Screenshot 2023-03-13 125928.png)
 
 - [x] Use ChatGPT API in this web application 
 
@@ -24,10 +24,15 @@ Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model
 ## Usage
 To use Talk-With-Chat-GPT-WebUI,
 
-0. make a .env file like this:
-        
-        OPENAI_API_KEY = you openai key 
+0. Download or clone this project to your local machine.
+
+        https://github.com/salire123/talk-with-chat-gpt-webui.git
+
+1. make a .env file like this:
+    OPENAI_API_KEY = you openai key 
+
         MESSAGE_LOG_PATH = message_log\testing_message_log.txt
+
     here you can find you key:
 
         https://platform.openai.com/account/api-keys
@@ -39,7 +44,6 @@ To use Talk-With-Chat-GPT-WebUI,
         assistant|The Los Angeles Dodgers won the World Series in 2020.
         user|Where was it played?
 
-1. Download or clone this project to your local machine.
 2. Install the required packages from requirements.txt.
 3. Run app.py file.
 4. Open http://localhost:5000/ in your browser to enter the web interface.

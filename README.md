@@ -4,6 +4,8 @@ Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model
 
 ##  To-do List
 
+! [plan](Screenshot 2023-03-13 125928.png)
+
 - [x] Use ChatGPT API in this web application 
 
     - [ ] let chat bot remember the chat 🤷‍♀️(idk it work or not now(testing))

@@ -46,6 +46,9 @@ To use Talk-With-Chat-GPT-WebUI,
         user|Where was it played?
 
 2. Install the required packages from requirements.txt.
+
+        pip install -r requirements.txt
+
 3. Run app.py file.
 4. Open http://localhost:5000/ in your browser to enter the web interface.
 5. Start chatting with ChatGPT models.

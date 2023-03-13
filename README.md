@@ -1,6 +1,6 @@
 # write by ChatGPT and Bing ai
-# TalkWithChatGPTWebUI
-TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
+# Talk-With-Chat-GPT-WebUI
+Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
 
 ##  To-do List
 
@@ -20,7 +20,7 @@ TalkWithChatGPTWebUI is a web application that utilizes OpenAI’s GPT model to 
 
 
 ## Usage
-To use TalkWithChatGPTWebUI,
+To use Talk-With-Chat-GPT-WebUI,
 
 0. make a .env file like this:
         
@@ -44,7 +44,7 @@ To use TalkWithChatGPTWebUI,
 5. Start chatting with ChatGPT models.
 
 ##  Dependencies
-TalkWithChatGPTWebUI relies on the following dependencies:
+Talk-With-Chat-GPT-WebUI relies on the following dependencies:
 
 ChatGPT API: A Python wrapper for OpenAI’s GPT model that allows easy integration with web applications.
 Tortoise TTS: A text-to-speech library that converts text into natural sounding speech using deep learning models.
@@ -52,9 +52,9 @@ D-ID API: A face anonymization service that generates realistic videos of faces 
 
 # ---------------------------------------------------------
 # 做完先寫中文
-# TalkWithChatGPTWebUI
+# Talk-With-Chat-GPT-WebUI
 
-TalkWithChatGPTWebUI是一個使用Python和Flask開發的網頁介面，讓使用者可以與ChatGPT模型進行對話。
+Talk-With-Chat-GPT-WebUI是一個使用Python和Flask開發的網頁介面，讓使用者可以與ChatGPT模型進行對話。
 
 ## 安裝和使用
 

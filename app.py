@@ -14,6 +14,7 @@ def handle_message(message):
     print('received message: ' + message) 
     if message != 'User connected!':
         send_message_to_chatbot(message)
+    
 
 def send_message_to_chatbot(message):
     # Call your chatbot function here to get its response

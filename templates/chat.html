@@ -32,6 +32,7 @@
 
     socket.on('connect', function() {
         socket.emit("User connected!");
+            
 
         socket.on('message', function(msg) {
             //only clear the Chatbot is typing... message

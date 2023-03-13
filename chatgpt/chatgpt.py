@@ -50,7 +50,7 @@ def rungpt(inputmessage,message_log):
 # Function that resets the conversation history
 def setgpt(message_log_path):
     message_log = []
-    with open(message_log_path, "r") as f:
+    with open(message_log_path, "r", encoding="utf-8") as f:
         for line in f:
             role, content = line.split("|")
             message_log.append({"role": role, "content": content.strip()})
@@ -59,7 +59,7 @@ def setgpt(message_log_path):
 
 # Function that saves the conversation history to a file
 def save_message_log(message_log, filename):
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding='utf-8') as f:
         for message in message_log:
             f.write(message["role"] + "|" + message["content"] + "\n")
 

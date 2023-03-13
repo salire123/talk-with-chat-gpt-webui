@@ -54,3 +54,7 @@ user|a
 assistant|I'm sorry, I'm not sure what you mean by "a". Can you please provide more information or let me know how I can help you?
 user|what is the previous chat i say?
 assistant|As an AI language model, I don't have access to the previous chat history. However, I am here to help you with any questions or tasks you might have. Please let me know how I can assist you today.
+user|aeiou
+assistant|Those are the vowels in the English alphabet! Is there anything else I can help you with?
+user|你好
+assistant|你好！有什么我可以帮助你的吗？

@@ -26,7 +26,7 @@ To use Talk-With-Chat-GPT-WebUI,
 
 0. Download or clone this project to your local machine.
 
-        https://github.com/salire123/talk-with-chat-gpt-webui.git
+        git clone https://github.com/salire123/talk-with-chat-gpt-webui.git
 
 1. make a .env file like this:
     OPENAI_API_KEY = you openai key 

@@ -31,10 +31,23 @@
     var socket = io.connect('http://127.0.0.1:5000');
 
     // when the client connects, send a message to the server
-    socket.on('connect', function() {
-        socket.emit("User connected!"); // send a message to the server
-        // get the message log from the server
-        
+    // Create an empty list to store the chat log
+    var chatLog = [];
+
+        // Listen for the 'connect' event
+        socket.on('message_log', function(data) {
+            // Set the chat log to the incoming data
+            chatLog = data;
+            console.log("get|"+chatLog);
+            // Loop through the chat log and append each message to the chat log
+            for (var i = 0; i < chatLog.length; i++) {
+            if (chatLog[i].role == "user") {
+                $('#chatlog').append($('<p class="user-message"></p>').text(chatLog[i].content));
+            } else if (chatLog[i].role == "assistant") {
+                $('#chatlog').append($('<p class="bot-message"></p>').text(chatLog[i].content));
+            }
+            $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);// scroll to the bottom of the chat log
+}
 
             
 
@@ -67,8 +80,6 @@
                 $('#chatlog').append($('<p class="bot-message"></p>').text(msg));
             }
 
-
-
             // Enable the chatbox input and send button
             $('#chatbox').prop('disabled', false);
             $('#chatbutton').prop('disabled', false);
@@ -81,40 +92,30 @@
         });
 
 
+
         // when the user presses enter, send the message to the server
         $('#chatbox').on('keydown', function(event) { // when the user presses a key
             if (event.which === 13) { // if the user presses enter
                 var message =$('#chatbox').val(); // get the user's message
-                $('#chatbox').prop('disabled', true); // disable the chatbox input
-                $('#chatbutton').prop('disabled', true); // disable the send button
+                $('#chatbox, #chatbutton').prop('disabled', true); // disable the chatbox input and send button
                 socket.emit('message', message); // pass the user's message to the server
                 $('#chatbox').val('');   // clear the chatbox
                 $('#chatlog').append($('<p class="user-message"></p>').text(message)); // append the user's message
-            
-                //chatbot loading the response
                 $('#chatlog').append('<p class="bot-message">Chatbot is typing...</p>'); // append the bot's message
-
-                // scroll to the bottom of the chat log
-                $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);
+                $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);// scroll to the bottom of the chat log
             }    
-        });
-
-
-        
+        });  
         // when the user presses the send button, send the message to the server
         $('#chatbutton').on('click', function() { // when the user presses a key
-            var message = $('#chatbox').val();// get the user's message
-            $('#chatlog').append('<p class="user-message">' + message + '</p>'); // append the user's message
-            socket.emit('message', message); // pass the user's message to the server
-            $('#chatbox').val(''); // clear the chatbox
-
-            //chatbot loading the response
-            $('#chatlog').append($('<p class="user-message"></p>').text(message)); // append the bot's message
-
-            // scroll to the bottom of the chat log
-            $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);
+            //same as enter
+            var message =$('#chatbox').val();
+                $('#chatbox, #chatbutton').prop('disabled', true);
+                socket.emit('message', message); 
+                $('#chatbox').val('');  
+                $('#chatlog').append($('<p class="user-message"></p>').text(message)); 
+                $('#chatlog').append('<p class="bot-message">Chatbot is typing...</p>'); 
+                $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);
         });
-
     });
 
     //change font size

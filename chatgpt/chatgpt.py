@@ -51,9 +51,18 @@ def setgpt(message_log_path):
     message_log = []
     with open(message_log_path, "r", encoding="utf-8") as f:
         for line in f:
-            role, content = line.split("|")
-            message_log.append({"role": role, "content": content.strip()})
+            # try to Split the line into the role and the content,if it fails, give error message
+            try:
+                role, content = line.split("|") # Split the line into the role and the content  
+            except:
+                print("Error: Failed to split line into role and content, please check the format of the file. it should be role|content and each line should be a new message.\n The line that failed is:"+line+
+                "if you want to have a new line pless use \\n \n"+
+                "please check your file and try again")
+                exit()
+            # Add the message to the conversation history
+            message_log.append({"role": role, "content": content})
 
+    # Return the conversation history
     return message_log
 
 # Function that saves the conversation history to a file

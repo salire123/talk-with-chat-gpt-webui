@@ -8,19 +8,23 @@ Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model
 
 - [x] Use ChatGPT API in this web application 
 
-    - [ ] let chat bot remember the chat 🤷‍♀️(idk it work or not now(testing))
+    - [x] let chat bot remember the chat 
+
+    - [ ] try to let gpt role play as some one😊🤔
 
 - [x] Create a website to host the chatbot 
 
     - [x] let user set the chat log font size
 
-    - [ ] show all previous chat 
+    - [x] show all previous chat 
+
+    - [ ] let people people chonce the message_log and gpt in webui
 
 - [ ] Implement sound for the chatbot using Tortoise TTS 🤔(trying)
 
-    -[x] make the custom voice🤔
+    -[x] make the custom voice👍
 
-    -[ ] try to use api to output wav
+    -[ ] try to use api to output wav🤔🤔🤔
 
 - [ ] Use D-ID API video and display it on the web 😒(it need to buy to use api💸💸💸, 😢have any like that and free?)
 

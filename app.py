@@ -1,14 +1,28 @@
+import os
+
 from datetime import datetime
 from flask import Flask, render_template, request, redirect
 from flask_socketio import SocketIO, send, emit
-from chatgpt.chatgptmain import usegpt, setgpt, save_message_log
+from chatgpt.chatgptmain import usegpt, setgpt, save_message_log, loadenv
 
 app = Flask(__name__)
 app.config['SECRET'] = 'secret!123'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
+loadenv()
+message_log_path = os.getenv("MESSAGE_LOG_PATH")
+message_log = setgpt(message_log_path)
 
-@socketio.on('message')
+
+@socketio.on('connect') # When the client connects
+def handle_connect():
+    emit('message', 'User connected!')
+    print('User connected!')
+    # Send the message_log to the client
+    print(message_log)
+    emit('message_log', message_log, broadcast=True)
+
+@socketio.on('message') # When the client sends a message
 
 def handle_message(message):
     print('received message: ' + message) # Print the message to the console

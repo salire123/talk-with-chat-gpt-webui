@@ -117,3 +117,5 @@ user|what about color?
 assistant|Sure! Here are some common colors:\n\n1. Red\n2. Orange\n3. Yellow\n4. Green\n5. Blue\n6. Purple\n7. Pink\n8. Brown\n9. Black\n10. White
 user|what about game?
 assistant|Sure! Here are some popular video games:\n\n1. Fortnite\n2. Minecraft\n3. Call of Duty\n4. Grand Theft Auto\n5. The Legend of Zelda\n6. Super Mario Bros.\n7. Overwatch\n
+user|what about fps
+assistant|Sure! Here are some popular first-person shooter (FPS) games:\n\n1. Call of Duty\n2. Battlefield\n3. Halo\n4. Counter-Strike\n5. Overwatch\n6. Team Fortress 2\n7.

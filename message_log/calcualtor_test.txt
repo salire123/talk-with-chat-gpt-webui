@@ -21,3 +21,99 @@ user|what about dog type?
 assistant|Sure, here are some common dog breeds:\n\n1. Labrador Retriever\n2. German Shepherd\n3. Bulldog\n4. Golden Retriever\n5. Beagle\n6. Poodle\n7. Rott
 user|have any pig type?
 assistant|Yes, here are some common pig breeds:\n\n1. Hampshire\n2. Duroc\n3. Yorkshire\n4. Berkshire\n5. Tamworth\n6. Gloucestershire Old Spot\n7. Hereford\n8. Large Black
+user|a
+assistant|I'm sorry, I'm not sure what you mean by "a". Could you please provide more information or clarify your request?
+user|
+assistant|I'm sorry, it looks like you didn't provide any input or request. If you have any questions or need assistance, please let me know!
+user|ht
+assistant|I'm sorry, I'm not sure what you mean by "ht". Could you please provide more information or clarify your request?
+user|k
+assistant|I'm sorry, I'm not sure what you mean by "k". Could you please provide more information or clarify your request?
+user|wqw
+assistant|I'm sorry, I'm not sure what you mean by "wqw". Could you please provide more information or clarify your request?
+user|hi
+assistant|Hello! How can I assist you today?
+user|how
+assistant|I'm sorry, I'm not sure what you're asking. Could you please provide more information or clarify your request?
+user|
+assistant|I'm sorry, it looks like you didn't provide any input or request. If you have any questions or need assistance, please let me know!
+user|give me list of flish
+assistant|I'm sorry, but I'm not aware of any "flish" term in English. Could you please provide more information or clarify your request?
+user|fish
+assistant|Oh, I see! Here are some examples of fish species:\n\n1. Salmon\n2. Tuna\n3. Trout\n4. Cod\n5. Haddock\n6. Catfish\n7. Tilapia\n8. Mahi
+user|have ant salmon type?
+assistant|Yes, there are several types of salmon. Here are some examples:\n\n1. Chinook salmon\n2. Coho salmon\n3. Sockeye salmon\n4. Pink salmon\n5. Chum salmon\n6. Atlantic
+user|Tuna?
+assistant|Yes, there are several types of tuna. Here are some examples:\n\n1. Bluefin tuna\n2. Yellowfin tuna\n3. Albacore tuna\n4. Skipjack tuna\n5. Bigeye tuna
+user|19+2
+assistant|Sure, here's the calculation you requested: [19+2].
+user|Tamworth?
+assistant|Tamworth is a breed of pig that is known for its reddish-golden hair and its long body. It is one of the oldest pig breeds in the world, and it originated in the United Kingdom. Tamworth pigs are known for
+user|type Tamworth?
+assistant|Tamworth is a breed of pig.
+user|type Chinook
+assistant|Chinook is a type of salmon.
+user|Catfish?
+assistant|Catfish is a type of fish that is named for its whisker-like barbels, which resemble a cat's whiskers. There are many different species of catfish, and they can be found in freshwater and saltwater habitats all over
+user|tpye Catfish?
+assistant|Catfish is a type of fish.
+user|have any in Catfish?
+assistant|I'm sorry, but I'm not sure what you're asking. Could you please provide more information or clarify your request?
+user|type for dog?
+assistant|Dog is a type of domesticated mammal and a common household pet. There are many different breeds of dogs, each with their own unique characteristics and traits.
+user|how many type of dog
+assistant|There are over 300 different breeds of dogs recognized by various kennel clubs around the world. These breeds vary in size, shape, color, and temperament, and each has its own unique characteristics and traits.
+user|can you give some type?
+assistant|Sure! Here are some popular dog breeds:\n\n1. Labrador Retriever\n2. German Shepherd\n3. Bulldog\n4. Golden Retriever\n5. Beagle\n6. Poodle\n7. Rottweiler
+user|21
+assistant|I'm sorry, I'm not sure what you're trying to ask. Could you please provide more information or clarify your request?
+user|aeiou!!
+assistant|I'm sorry, I'm not sure what you're asking. Could you please provide more information or clarify your request?
+user|talk with me aeiou!!!!!! \>W</
+assistant|Of course! Hello! How may I assist you today?
+user|aeiou \\>W<//
+assistant|AEIOU! Is there anything I can help you with?
+user|\\>w<//
+assistant|Is there anything I can assist you with?
+user|OWO mean
+assistant|"OWO" is an emoticon that represents a cute face with wide eyes and an open mouth. It is often used to convey excitement, surprise, or happiness in online conversations.
+user|what about \\>W<//
+assistant|"\\>W<//" is another emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|\\>w<// mean?
+assistant|"\\>w<//" is another emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|what is \\>W<//
+assistant|"\\>W<//" is an emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|\\>W<//
+assistant|Is there anything else I can assist you with?
+user|what is \\>W<//
+assistant|"\\>W<//" is an emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|say \\>w<//
+assistant|Sure, here it is: \\>w<//
+user|hi
+assistant|Hello! How can I assist you today?
+user|what is \\>w<//
+assistant|"\\>w<//" is an emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|what is \\>w<//
+assistant|"\\>w<//" is an emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|what is \\>W<//
+assistant|"\\>W<//" is an emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|what is \\>W<//
+assistant|"\\>W<//" is an emoticon that represents a cute face with wide eyes and a closed mouth. It is similar to "OWO" and is often used to convey excitement, happiness, or cuteness in online conversations.
+user|give me a list of emoticon
+assistant|Sure, here are some common emoticons:\n\n1. :) - Smile\n2. :( - Sad\n3. :D - Big smile\n4. :P - Tongue sticking out\n5. ;) - Wink\n6. :
+user|give me a list of emoticon
+assistant|Sure, here are some common emoticons:\n\n1. :) - Smile\n2. :( - Sad\n3. :D - Big smile\n4. :P - Tongue sticking out\n5. ;) - Wink\n6. :
+user|give me a list of emoticon
+assistant|Sure, here are some common emoticons:\n\n1. :) - Smile\n2. :( - Sad\n3. :D - Big smile\n4. :P - Tongue sticking out\n5. ;) - Wink\n6
+user|give me list of dog
+assistant|Sure! Here are some popular dog breeds:\n\n1. Labrador Retriever\n2. German Shepherd\n3. Bulldog\n4. Golden Retriever\n5. Beagle\n6. Poodle\n7. Rott
+user|how about cat?
+assistant|Sure! Here are some popular cat breeds:\n\n1. Siamese\n2. Persian\n3. Maine Coon\n4. Bengal\n5. Scottish Fold\n6. Sphynx\n7. British Shorthair
+user|what about pig
+assistant|Sure! Here are some popular pig breeds:\n\n1. Hampshire\n2. Duroc\n3. Yorkshire\n4. Berkshire\n5. Tamworth\n6. Gloucestershire Old Spot\n7. Hereford\n8.
+user|what about fish?
+assistant|Certainly! Here are some popular fish species:\n\n1. Salmon\n2. Tuna\n3. Trout\n4. Cod\n5. Haddock\n6. Catfish\n7. Tilapia\n8. Mahi-Mahi
+user|what about color?
+assistant|Sure! Here are some common colors:\n\n1. Red\n2. Orange\n3. Yellow\n4. Green\n5. Blue\n6. Purple\n7. Pink\n8. Brown\n9. Black\n10. White
+user|what about game?
+assistant|Sure! Here are some popular video games:\n\n1. Fortnite\n2. Minecraft\n3. Call of Duty\n4. Grand Theft Auto\n5. The Legend of Zelda\n6. Super Mario Bros.\n7. Overwatch\n

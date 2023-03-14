@@ -38,9 +38,8 @@ def rungpt(inputmessage,message_log):
         return "I'm sorry, I didn't understand that.",message_log
     # If the chatbot responded, add its response to the conversation history and return it
     else:
-        # change the newline character to \n so it displays properly in the browseri
+        # change the newline character to a string so it can be saved to a text file
         print(response)
-        response = response.replace("\n", "\\n")
         # Add the chatbot's response to the conversation history
         message_log.append({"role": "assistant", "content": response})
         return response,message_log

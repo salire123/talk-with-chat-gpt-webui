@@ -70,13 +70,26 @@ pre {
   margin-left: 20px;
 }
 
+
+
 .bot-message {
-  text-align: left;
+  clear: both;
+  margin-bottom: 15px;
+  padding: 10px;
+  max-width: 70%;
+  background-color: #2f2f2f;
+  border-radius: 20px;
+  float: left;
 }
 
 .user-message {
-  text-align: right;
+  clear: both;
+  margin-bottom: 15px;
+  padding: 10px;
+  max-width: 70%;
+  background-color: #001e39;
+  border-radius: 20px;
+  float: right;
 }
-
 
 

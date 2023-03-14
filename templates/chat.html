@@ -37,29 +37,68 @@
 
             
 
-        // when the server sends a message, append it to the chat log
         socket.on('message', function(msg) {
+            // Disable the send button until the "Chatbot is typing..." message is removed
+            $('#chatbutton').prop('disabled', true);
+
             //only clear the Chatbot is typing... message
             $('.bot-message').last().remove();
-            $('#chatlog').append('<p class="bot-message">' + msg + '</p>'); // append the bot's message
+            
+            console.log(msg)
+            // if msg have a link, then it will be a link
+            if (msg.includes("http")) {
+                $('#chatlog').append($('<p class="bot-message"></p>').html(msg));
+            }
+            // if msg have \n, then it will be a paragraph
+            // use for loop to split the string
+            else if (msg.includes("\n")) {
+                console.log("yes")
+                var msgArray = msg.split("\n");
+                var haveparagraphmsg = "";
+                for (var i = 0; i < msgArray.length; i++) {
+                    haveparagraphmsg += msgArray[i] + "<br>";
+                }
+                $('#chatlog').append($('<p class="bot-message"></p>').text(haveparagraphmsg));
+            }
+            else {
+                console.log("no");
+                console.log(msg.includes("\n"));
+                $('#chatlog').append($('<p class="bot-message"></p>').text(msg));
+            }
+
+
+
+            // Enable the chatbox input and send button
+            $('#chatbox').prop('disabled', false);
+            $('#chatbutton').prop('disabled', false);
+
+            // set focus back to the chatbox input
+            $('#chatbox').focus();
+
+            // scroll to the bottom of the chat log
+            $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);
         });
-     
+
+
         // when the user presses enter, send the message to the server
         $('#chatbox').on('keydown', function(event) { // when the user presses a key
             if (event.which === 13) { // if the user presses enter
                 var message =$('#chatbox').val(); // get the user's message
+                $('#chatbox').prop('disabled', true); // disable the chatbox input
+                $('#chatbutton').prop('disabled', true); // disable the send button
                 socket.emit('message', message); // pass the user's message to the server
                 $('#chatbox').val('');   // clear the chatbox
-                $('#chatlog').append('<p class="user-message">' + message + '</p>'); // append the user's message
-
+                $('#chatlog').append($('<p class="user-message"></p>').text(message)); // append the user's message
+            
                 //chatbot loading the response
                 $('#chatlog').append('<p class="bot-message">Chatbot is typing...</p>'); // append the bot's message
 
                 // scroll to the bottom of the chat log
                 $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);
-
-            }
+            }    
         });
+
+
         
         // when the user presses the send button, send the message to the server
         $('#chatbutton').on('click', function() { // when the user presses a key
@@ -69,12 +108,12 @@
             $('#chatbox').val(''); // clear the chatbox
 
             //chatbot loading the response
-            $('#chatlog').append('<p class="bot-message">Chatbot is typing...</p>'); // append the bot's message
+            $('#chatlog').append($('<p class="user-message"></p>').text(message)); // append the bot's message
 
             // scroll to the bottom of the chat log
             $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);
-
         });
+
     });
 
     //change font size

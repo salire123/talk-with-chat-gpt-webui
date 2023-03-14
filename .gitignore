@@ -1,7 +1,10 @@
 
 .env
-
+open_wsl_venv.sh
 
 __pycache__/
 chatgpt/__pycache__/
 venv/
+winvenv/
+wslvenv/
+tortoise-tts/

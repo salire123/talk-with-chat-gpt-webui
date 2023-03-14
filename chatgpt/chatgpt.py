@@ -33,19 +33,19 @@ def rungpt(inputmessage,message_log):
     # Send the conversation history to the chatbot and get its response
     response = send_message(message_log)
 
-    # Add the chatbot's response to the conversation history and print it to the console
-    message_log.append({"role": "assistant", "content": response})
-    print(message_log)
-    return response,message_log
+    # If the chatbot didn't respond, return an error message
+    if response == "":
+        return "I'm sorry, I didn't understand that.",message_log
+    # If the chatbot responded, add its response to the conversation history and return it
+    else:
+        # change the newline character to \n so it displays properly in the browseri
+        print(response)
+        response = response.replace("\n", "\\n")
+        # Add the chatbot's response to the conversation history
+        message_log.append({"role": "assistant", "content": response})
+        return response,message_log
 
-# Function that resets the conversation history
-#def setgpt():
-#    message_log = [
-#        {"role": "system", "content": "talk like Albert Einstein after this chat"},
-#       {"role": "user", "content": "talk like Albert Einstein after this chat"},
-#        {"role": "assistant", "content": "Ahem, let me try to emulate the eloquent style of Albert Einstein."}
-#   ]
-#    return message_log
+
 
 # Function that resets the conversation history
 def setgpt(message_log_path):

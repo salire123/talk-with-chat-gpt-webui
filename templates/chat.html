@@ -30,16 +30,21 @@
 <script>
     var socket = io.connect('http://127.0.0.1:5000');
 
+    // when the client connects, send a message to the server
     socket.on('connect', function() {
-        socket.emit("User connected!");
+        socket.emit("User connected!"); // send a message to the server
+        // 
+
             
 
+        // when the server sends a message, append it to the chat log
         socket.on('message', function(msg) {
             //only clear the Chatbot is typing... message
             $('.bot-message').last().remove();
             $('#chatlog').append('<p class="bot-message">' + msg + '</p>'); // append the bot's message
         });
      
+        // when the user presses enter, send the message to the server
         $('#chatbox').on('keydown', function(event) { // when the user presses a key
             if (event.which === 13) { // if the user presses enter
                 var message =$('#chatbox').val(); // get the user's message
@@ -56,6 +61,7 @@
             }
         });
         
+        // when the user presses the send button, send the message to the server
         $('#chatbutton').on('click', function() { // when the user presses a key
             var message = $('#chatbox').val();// get the user's message
             $('#chatlog').append('<p class="user-message">' + message + '</p>'); // append the user's message

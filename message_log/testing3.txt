@@ -1,3 +1,0 @@
-system|You are a helpful assistant.
-user|hi
-assistant|Hello! How can I assist you today?

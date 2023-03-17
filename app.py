@@ -41,7 +41,7 @@ def send_message_to_chatbot(message): # Send the message to the chatbot
 def get_chatbot_response(message): # Get the chatbot response
     # Call your chatbot code here to get the response
     print(message)
-    chatbot_response = usegpt(str(message))
+    chatbot_response = usegpt(str(message), message_log, message_log_path)
     return chatbot_response
 
 @app.route('/')

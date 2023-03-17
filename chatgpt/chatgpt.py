@@ -1,5 +1,7 @@
 import os
 import openai
+import json
+
 from dotenv import load_dotenv
 
 # Function that sends a message to the chatbot model and returns its response
@@ -48,28 +50,26 @@ def rungpt(inputmessage,message_log):
 
 # Function that resets the conversation history
 def setgpt(message_log_path):
-    message_log = []
-    with open(message_log_path, "r", encoding="utf-8") as f:
-        for line in f:
-            # try to Split the line into the role and the content,if it fails, give error message
-            try:
-                role, content = line.split("|") # Split the line into the role and the content  
-            except:
-                print("Error: Failed to split line into role and content, please check the format of the file. it should be role|content and each line should be a new message.\n The line that failed is:"+line+
-                "if you want to have a new line pless use \\n \n"+
-                "please check your file and try again")
-                exit()
-            # Add the message to the conversation history
-            message_log.append({"role": role, "content": content})
+
+    encodings = ['utf-8', 'ISO-8859-1', 'windows-1252', 'ascii']
+    for encoding in encodings:
+        try:
+            with open(message_log_path, 'r', encoding=encoding) as f:
+                message_log = json.load(f)
+            break
+        except UnicodeDecodeError:
+            continue
 
     # Return the conversation history
     return message_log
 
+
 # Function that saves the conversation history to a file
+
 def save_message_log(message_log, filename):
     with open(filename, "w", encoding='utf-8') as f:
-        for message in message_log:
-            f.write(message["role"] + "|" + message["content"] + "\n")
+        json.dump(message_log, f)
+
 
 def loadenv():
     load_dotenv()

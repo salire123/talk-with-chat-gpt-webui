@@ -1,4 +1,7 @@
 # write by ChatGPT and Bing ai
+
+# i give up for now
+
 # Talk-With-Chat-GPT-WebUI
 Talk-With-Chat-GPT-WebUI is a web application that utilizes OpenAI’s GPT model to simulate a chatbot conversation with users. The chatbot can respond to user input and continue the conversation using natural language processing.
 
